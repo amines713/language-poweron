@@ -1,0 +1,26 @@
+{
+  "name": "language-poweron",
+  "version": "0.0.1",
+  "description": "PowerOn for Atom",
+  "main": "index.js",
+  "scripts": {
+    "rebuild": "electron-rebuild --version 6.1.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amines713/language-poweron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amines713/language-poweron/issues"
+  },
+  "homepage": "https://github.com/amines713/language-poweron#readme",
+  "dependencies": {
+    "tree-sitter-poweron": "0.0.2"
+  },
+  "devDependencies": {
+    "electron": "^6.1.12",
+    "electron-rebuild": "^2.3.2"
+  }
+}

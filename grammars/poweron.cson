@@ -1,0 +1,11 @@
+name: 'PowerOn'
+scopeName: 'poweron'
+type: 'tree-sitter'
+parser: 'tree-sitter-poweron'
+
+fileTypes: [
+  'pn'
+]
+
+scopes:
+  '"function"': 'entity.name.function'
