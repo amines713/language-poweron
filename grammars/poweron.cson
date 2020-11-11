@@ -4,8 +4,45 @@ type: 'tree-sitter'
 parser: 'tree-sitter-poweron'
 
 fileTypes: [
-  'pn'
+	'pn'
+]
+
+folds: [
+	{
+		type: ['comment']
+	}
+	{
+		type: [
+			'define_block',
+			'procedure_block',
+			'setup_block',
+			'total_block'
+			'print_block',
+			'for_loop',
+			'if_statement'
+		]
+		start: {index: 0}
+		end: {index: -1}
+	}
 ]
 
 scopes:
-  '"function"': 'entity.name.function'
+	'"DO"': 'keyword.control'
+	'"TO"': 'keyword.control'
+
+	'end': 'keyword.control'
+	'call_statement > call': 'keyword.control'
+	'target_package > target': 'keyword.control'
+	'procedure_block > procedure': 'keyword.control'
+	'print_block > print': 'keyword.control'
+	'setup_block > setup': 'keyword.control'
+	'define_block > define': 'keyword.control'
+	'total_block > total': 'keyword.control'
+	'for_loop > "FOR"': 'keyword.control'
+	'if_statement > "IF"': 'keyword.control'
+	'if_statement > "THEN"': 'keyword.control'
+
+	'comment': 'comment.block'
+	'string_literal': 'string.quoted.double'
+	'function_call > identifier': 'entity.name.function'
+	'assignment > data_type': 'support.storage.type'
