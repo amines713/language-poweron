@@ -1,6 +1,6 @@
 {
   "name": "language-poweron",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "PowerOn for Atom",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/amines713/language-poweron#readme",
   "dependencies": {
-    "tree-sitter-poweron": "file:../tree-sitter-poweron"
+    "tree-sitter-poweron": "^0.0.13"
   },
   "devDependencies": {
     "electron": "^6.1.12",
